@@ -1,0 +1,62 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.4
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/RECETOX/GC_derivatization:
+      branch: master
+      repo: https://github.com/RECETOX/GC_derivatization
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/RECETOX/GC_derivatization git:
+        commands:
+        - /usr/bin/env sh .sqa/script.gimpy-thistle-eagle.sh
+        container: qc.acc_slaphappy-emerald-mole
+  QC.Doc:
+    repos:
+      github.com/RECETOX/GC_derivatization find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.hilly-ultramarine-civet.sh
+        container: qc.doc_seedy-cerise-paradise
+      github.com/RECETOX/GC_derivatization git:
+        commands:
+        - /usr/bin/env sh .sqa/script.snappy-flax-tetra.sh
+        container: qc.doc_pretty-xanthic-vulture
+      github.com/RECETOX/GC_derivatization markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.homely-apricot-zonkey.sh
+        container: qc.doc_lovely-eggplant-hornet
+  QC.Lic:
+    repos:
+      github.com/RECETOX/GC_derivatization licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.snazzy-coral-dog.sh
+        container: qc.lic_flimsy-viridian-discus
+  QC.Sec:
+    repos:
+      github.com/RECETOX/GC_derivatization bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.stuffy-cobalt-kiwi.sh
+        container: qc.sec_leaky-aqua-donkey
+  QC.Sty:
+    repos:
+      github.com/RECETOX/GC_derivatization flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.lovely-mauve-ocelot.sh
+        container: qc.sty_dorky-orchid-giraffe
+      github.com/RECETOX/GC_derivatization hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.stinky-orange-paradise.sh
+        container: qc.sty_snoopy-maroon-husky
+  QC.Ver:
+    repos:
+      github.com/RECETOX/GC_derivatization get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.crabby-cinnamon-tang.sh
+        container: qc.ver_grumpy-olivine-chamois
+timeout: 1800
