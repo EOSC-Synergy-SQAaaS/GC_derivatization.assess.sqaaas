@@ -1,4 +1,4 @@
 (
-cd github.com/RECETOX/GC_derivatization &&
+cd github.com/RECETOX/gc_derivatization &&
     git rev-parse --is-inside-work-tree
 )

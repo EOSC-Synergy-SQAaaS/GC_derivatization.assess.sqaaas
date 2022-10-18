@@ -4,59 +4,59 @@ config:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/1.7.4
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/RECETOX/GC_derivatization:
+    github.com/RECETOX/gc_derivatization:
       branch: master
-      repo: https://github.com/RECETOX/GC_derivatization
+      repo: https://github.com/RECETOX/gc_derivatization
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/RECETOX/GC_derivatization git:
+      github.com/RECETOX/gc_derivatization git:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-thistle-eagle.sh
-        container: qc.acc_slaphappy-emerald-mole
+        - /usr/bin/env sh .sqa/script.seedy-alizarin-tortoise.sh
+        container: qc.acc_cranky-chocolate-gibbon
   QC.Doc:
     repos:
-      github.com/RECETOX/GC_derivatization find_doc_files.py:
+      github.com/RECETOX/gc_derivatization find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-ultramarine-civet.sh
-        container: qc.doc_seedy-cerise-paradise
-      github.com/RECETOX/GC_derivatization git:
+        - /usr/bin/env sh .sqa/script.gamy-orange-worm.sh
+        container: qc.doc_frumpy-lime-tortoise
+      github.com/RECETOX/gc_derivatization git:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-flax-tetra.sh
-        container: qc.doc_pretty-xanthic-vulture
-      github.com/RECETOX/GC_derivatization markdownlint:
+        - /usr/bin/env sh .sqa/script.goopy-burgundy-reindeer.sh
+        container: qc.doc_crappy-black-tiger
+      github.com/RECETOX/gc_derivatization markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-apricot-zonkey.sh
-        container: qc.doc_lovely-eggplant-hornet
+        - /usr/bin/env sh .sqa/script.leaky-russet-greyhound.sh
+        container: qc.doc_lousy-beige-slug
   QC.Lic:
     repos:
-      github.com/RECETOX/GC_derivatization licensee:
+      github.com/RECETOX/gc_derivatization licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-coral-dog.sh
-        container: qc.lic_flimsy-viridian-discus
+        - /usr/bin/env sh .sqa/script.tasty-celadon-ocelot.sh
+        container: qc.lic_grumpy-champagne-birman
   QC.Sec:
     repos:
-      github.com/RECETOX/GC_derivatization bandit:
+      github.com/RECETOX/gc_derivatization bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-cobalt-kiwi.sh
-        container: qc.sec_leaky-aqua-donkey
+        - /usr/bin/env sh .sqa/script.flimsy-goldenrod-mastiff.sh
+        container: qc.sec_chummy-cyan-snail
   QC.Sty:
     repos:
-      github.com/RECETOX/GC_derivatization flake8:
+      github.com/RECETOX/gc_derivatization flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-mauve-ocelot.sh
-        container: qc.sty_dorky-orchid-giraffe
-      github.com/RECETOX/GC_derivatization hadolint:
+        - /usr/bin/env sh .sqa/script.muzzy-magnolia-tamarin.sh
+        container: qc.sty_woozy-wheat-mongoose
+      github.com/RECETOX/gc_derivatization hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-orange-paradise.sh
-        container: qc.sty_snoopy-maroon-husky
+        - /usr/bin/env sh .sqa/script.sleazy-emerald-hyrax.sh
+        container: qc.sty_chewy-cinnamon-magpie
   QC.Ver:
     repos:
-      github.com/RECETOX/GC_derivatization get_git_tags.py:
+      github.com/RECETOX/gc_derivatization get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-cinnamon-tang.sh
-        container: qc.ver_grumpy-olivine-chamois
+        - /usr/bin/env sh .sqa/script.skinny-eggplant-chin.sh
+        container: qc.ver_bumpy-cinnabar-heron
 timeout: 1800
