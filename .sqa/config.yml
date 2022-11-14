@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/RECETOX/gc_derivatization git:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-teal-baboon.sh
-        container: qc.acc_woozy-scarlet-malamute
+        - /usr/bin/env sh .sqa/script.crappy-maroon-oriole.sh
+        container: qc.acc_grumpy-rose-hippopotamus
   QC.Doc:
     repos:
       github.com/RECETOX/gc_derivatization find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-myrtle-numbat.sh
-        container: qc.doc_flimsy-apricot-eagle
+        - /usr/bin/env sh .sqa/script.ready-firebrick-dormouse.sh
+        container: qc.doc_lovely-ecru-mongoose
       github.com/RECETOX/gc_derivatization git:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-myrtle-chinchilla.sh
-        container: qc.doc_leaky-chartreuse-mayfly
+        - /usr/bin/env sh .sqa/script.woolly-azure-deer.sh
+        container: qc.doc_clammy-wheat-gerbil
       github.com/RECETOX/gc_derivatization markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-platinum-mule.sh
-        container: qc.doc_homey-brown-goose
+        - /usr/bin/env sh .sqa/script.scummy-aqua-emu.sh
+        container: qc.doc_pasty-chartreuse-centipede
   QC.Lic:
     repos:
       github.com/RECETOX/gc_derivatization licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-auburn-woodpecker.sh
-        container: qc.lic_scummy-aquamarine-octopus
+        - /usr/bin/env sh .sqa/script.droopy-chestnut-reindeer.sh
+        container: qc.lic_lumpy-charcoal-hyrax
   QC.Sec:
     repos:
       github.com/RECETOX/gc_derivatization bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-tangerine-labradoodle.sh
-        container: qc.sec_silly-maroon-hyena
+        - /usr/bin/env sh .sqa/script.blurry-heliotrope-macaque.sh
+        container: qc.sec_bumpy-ivory-dodo
   QC.Sty:
     repos:
       github.com/RECETOX/gc_derivatization flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-purple-bordeaux.sh
-        container: qc.sty_goopy-eggplant-moorhen
+        - /usr/bin/env sh .sqa/script.skanky-cream-millipede.sh
+        container: qc.sty_greasy-bistre-cichlid
   QC.Ver:
     repos:
       github.com/RECETOX/gc_derivatization get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-russet-mist.sh
-        container: qc.ver_sickly-gamboge-llama
+        - /usr/bin/env sh .sqa/script.shaggy-copper-quoll.sh
+        container: qc.ver_beady-tangerine-budgerigar
 timeout: 1800
