@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.4
+      branch: release/1.7.5
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/RECETOX/gc_derivatization:
       branch: master
@@ -15,48 +15,44 @@ sqa_criteria:
     repos:
       github.com/RECETOX/gc_derivatization git:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-eggplant-oriole.sh
-        container: qc.acc_beady-chartreuse-mayfly
+        - /usr/bin/env sh .sqa/script.wimpy-teal-baboon.sh
+        container: qc.acc_woozy-scarlet-malamute
   QC.Doc:
     repos:
       github.com/RECETOX/gc_derivatization find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-ultramarine-beagle.sh
-        container: qc.doc_lanky-asparagus-goat
+        - /usr/bin/env sh .sqa/script.lousy-myrtle-numbat.sh
+        container: qc.doc_flimsy-apricot-eagle
       github.com/RECETOX/gc_derivatization git:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-lime-grasshopper.sh
-        container: qc.doc_stuffy-flax-corgi
+        - /usr/bin/env sh .sqa/script.bumpy-myrtle-chinchilla.sh
+        container: qc.doc_leaky-chartreuse-mayfly
       github.com/RECETOX/gc_derivatization markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-persimmon-opossum.sh
-        container: qc.doc_stuffy-cobalt-wolf
+        - /usr/bin/env sh .sqa/script.geeky-platinum-mule.sh
+        container: qc.doc_homey-brown-goose
   QC.Lic:
     repos:
       github.com/RECETOX/gc_derivatization licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-ecru-mist.sh
-        container: qc.lic_lousy-lilac-lion
+        - /usr/bin/env sh .sqa/script.leaky-auburn-woodpecker.sh
+        container: qc.lic_scummy-aquamarine-octopus
   QC.Sec:
     repos:
       github.com/RECETOX/gc_derivatization bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-khaki-budgerigar.sh
-        container: qc.sec_droopy-zucchini-lynx
+        - /usr/bin/env sh .sqa/script.wheezy-tangerine-labradoodle.sh
+        container: qc.sec_silly-maroon-hyena
   QC.Sty:
     repos:
       github.com/RECETOX/gc_derivatization flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-ruby-starfish.sh
-        container: qc.sty_shabby-violet-moth
-      github.com/RECETOX/gc_derivatization hadolint:
-        commands:
-        - /usr/bin/env sh .sqa/script.frumpy-cardinal-wildebeest.sh
-        container: qc.sty_wheezy-peach-camel
+        - /usr/bin/env sh .sqa/script.hasty-purple-bordeaux.sh
+        container: qc.sty_goopy-eggplant-moorhen
   QC.Ver:
     repos:
       github.com/RECETOX/gc_derivatization get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-carmine-retriever.sh
-        container: qc.ver_shaky-persimmon-hyrax
+        - /usr/bin/env sh .sqa/script.snazzy-russet-mist.sh
+        container: qc.ver_sickly-gamboge-llama
 timeout: 1800
