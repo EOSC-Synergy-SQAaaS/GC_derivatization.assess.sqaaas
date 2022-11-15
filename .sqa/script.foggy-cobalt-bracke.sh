@@ -1,4 +1,4 @@
 (
 cd github.com/RECETOX/gc_derivatization &&
-    licensee detect . --json
+    licensee detect . --confidence 60 --json
 )

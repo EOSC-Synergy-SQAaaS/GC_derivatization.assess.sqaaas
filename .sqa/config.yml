@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.5
+      branch: release/1.7.6
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/RECETOX/gc_derivatization:
       branch: master
@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/RECETOX/gc_derivatization git:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-maroon-oriole.sh
-        container: qc.acc_grumpy-rose-hippopotamus
+        - /usr/bin/env sh .sqa/script.nippy-chestnut-zonkey.sh
+        container: qc.acc_ready-sangria-shark
   QC.Doc:
     repos:
       github.com/RECETOX/gc_derivatization find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-firebrick-dormouse.sh
-        container: qc.doc_lovely-ecru-mongoose
+        - /usr/bin/env sh .sqa/script.geeky-seashell-wrasse.sh
+        container: qc.doc_lousy-salmon-binturong
       github.com/RECETOX/gc_derivatization git:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-azure-deer.sh
-        container: qc.doc_clammy-wheat-gerbil
+        - /usr/bin/env sh .sqa/script.snappy-sangria-drever.sh
+        container: qc.doc_lovely-pumpkin-rabbit
       github.com/RECETOX/gc_derivatization markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-aqua-emu.sh
-        container: qc.doc_pasty-chartreuse-centipede
+        - /usr/bin/env sh .sqa/script.whiny-ultramarine-magpie.sh
+        container: qc.doc_seedy-cerulean-quokka
   QC.Lic:
     repos:
       github.com/RECETOX/gc_derivatization licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-chestnut-reindeer.sh
-        container: qc.lic_lumpy-charcoal-hyrax
+        - /usr/bin/env sh .sqa/script.foggy-cobalt-bracke.sh
+        container: qc.lic_randy-jade-toad
   QC.Sec:
     repos:
       github.com/RECETOX/gc_derivatization bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-heliotrope-macaque.sh
-        container: qc.sec_bumpy-ivory-dodo
+        - /usr/bin/env sh .sqa/script.baggy-gamboge-axolotl.sh
+        container: qc.sec_goopy-peach-emu
   QC.Sty:
     repos:
       github.com/RECETOX/gc_derivatization flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-cream-millipede.sh
-        container: qc.sty_greasy-bistre-cichlid
+        - /usr/bin/env sh .sqa/script.blurry-harlequin-greyhound.sh
+        container: qc.sty_lanky-charcoal-audemer
   QC.Ver:
     repos:
       github.com/RECETOX/gc_derivatization get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-copper-quoll.sh
-        container: qc.ver_beady-tangerine-budgerigar
+        - /usr/bin/env sh .sqa/script.tacky-denim-wolfhound.sh
+        container: qc.ver_shabby-green-woodlouse
 timeout: 1800
